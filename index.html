@@ -1,0 +1,17 @@
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+</head>
+
+<body>
+  <script type="module">
+    import init, { add } from './pkg/wasm_template.js';
+    (async () => {
+      await init();
+      console.log(`1 + 11 = ${add(1, 11)}`);
+    })();
+  </script>
+</body>
+
+</html>
